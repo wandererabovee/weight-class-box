@@ -1,0 +1,53 @@
+.box-container {
+    position: relative;
+}
+
+.blue-box, .red-box {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.blue-box {
+    background-color: #fff;
+}
+
+.red-box {
+    background-color: #fff;
+    display: none;
+    overflow: hidden; /* Ensure content stays within the box */
+}
+
+.red-box img {
+    max-width: 100%; /* Make sure the image doesn't exceed the box width */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+.weight-class-picker {
+    text-align: center;
+}
+
+.weight-class-picker__range {
+    width: 80%;
+}
+
+.weight-class-picker__value {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.toggle-units-button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+}

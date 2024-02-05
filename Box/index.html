@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="box-container">
+        <div class="blue-box">
+            <button id="toggle-button" class="check-weight-class-button">Check weight class</button>
+            <label for="weight-range">Select Your Weight:</label>
+            <input id="weight-range" class="weight-class-picker__range" type="range" value="70" min="50" max="120">
+            <span class="weight-class-picker__value">120 kg</span>
+            <button id="toggle-units" class="toggle-units-button">Toggle Units</button>
+        </div>
+        <div id="weight-class-result" class="red-box"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
